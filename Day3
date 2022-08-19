@@ -44,3 +44,44 @@ if year % 4 == 0:
     print("Leap year.")
 else:
   print("Not leap year.")
+
+
+
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+lowercase_name1 = name1.lower()
+lowercase_name2 = name2.lower()
+
+t1 = lowercase_name1.count("t")
+r1 = lowercase_name1.count("r")
+u1 = lowercase_name1.count("u")
+e1 = lowercase_name1.count("e")
+t2 = lowercase_name2.count("t")
+r2 = lowercase_name2.count("r")
+u2 = lowercase_name2.count("u")
+e2 = lowercase_name2.count("e")
+
+l1 = lowercase_name1.count("l")
+o1 = lowercase_name1.count("o")
+v1 = lowercase_name1.count("v")
+e1 = lowercase_name1.count("e")
+l2 = lowercase_name2.count("l")
+o2 = lowercase_name2.count("o")
+v2 = lowercase_name2.count("v")
+e2 = lowercase_name2.count("e")
+
+total_true = str(t1 + t2 + r1 + r2 + u1 + u2 + e1 + e2)
+total_love = str(l1 + l2 + o1 + o2 + v1 + v2 + e1 + e2)
+total = int(total_true + total_love)
+
+if total < 10 or total > 90:
+    print(f"Your score is {total}, you go together like coke and mentos.")
+elif total > 40 and total < 50:
+    print(f"Your score is {total}, you are alright together.")
+else:
+    print(f"Your score is {total}.")
